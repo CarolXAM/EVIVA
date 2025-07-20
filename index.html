@@ -50,21 +50,16 @@
       text-align: center;
     }
 
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
     .product-card {
       background-color: #fff;
       border: 1px solid #eee;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: inline-block;
       padding: 20px;
-      max-width: 300px;
-      text-align: center;
+      max-width: 400px;
+      margin: 20px;
+      vertical-align: top;
     }
 
     .product-card img {
@@ -109,9 +104,9 @@
 <body>
   <nav>
     <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
     <a href="#apropos">À propos</a>
     <a href="#commander">Commander</a>
-    <a href="#produits">Produits</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -119,6 +114,28 @@
     <h1>Éviva</h1>
     <p>Chez Éviva, nous croyons que le bien-être commence par la nature. Nos produits artisanaux suisses sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure. Qualité, éthique et vitalité sont au cœur de notre mission.</p>
   </header>
+
+  <section id="produits">
+    <h2>Nos Produits</h2>
+    <div class="product-card">
+      <img src="ChatGPT Image 20_07_2025, 15_11_55.png" alt="Shake Vanille Naturel">
+      <h2>Shake Vanille Naturel</h2>
+      <p>Shake nutritionnel à base d'ingrédients naturels. Riche en protéines et vitamines. Idéal pour l'énergie quotidienne et la gestion du poids.</p>
+      <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
+    </div>
+    <div class="product-card">
+      <img src="ChatGPT Image 20_07_2025, 15_00_06.png" alt="Boisson Aloe Vera Concentrée">
+      <h2>Boisson Aloe Vera Concentrée</h2>
+      <p>Formule naturelle enrichie à base d'Aloe Vera pour favoriser la digestion, hydrater le corps et revitaliser votre bien-être général.</p>
+      <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
+    </div>
+    <div class="product-card">
+      <img src="ChatGPT Image 20_07_2025, 15_11_55.png" alt="F1 Équilibre Nutritionnel – Vanille">
+      <h2>F1 Équilibre Nutritionnel – Vanille</h2>
+      <p>Shake nutritionnel complet au goût vanille. Source de protéines, fibres et vitamines, idéal pour remplacer un repas de manière équilibrée tout en soutenant un mode de vie sain.</p>
+      <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
+    </div>
+  </section>
 
   <section id="apropos">
     <div class="about">
@@ -130,26 +147,7 @@
   <section id="commander">
     <div class="about">
       <h2>Comment commander ?</h2>
-      <p>Cliquez simplement sur le bouton WhatsApp ci-dessous pour discuter avec nous, poser vos questions ou passer commande. Nous vous répondons rapidement et vous accompagnons dans le choix du meilleur produit selon vos besoins.</p>
-    </div>
-  </section>
-
-  <section id="produits">
-    <h2>Nos Produits</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="ChatGPT Image 20_07_2025, 15_11_55.png" alt="Shake Vanille Naturel">
-        <h2>Shake Vanille Naturel</h2>
-        <p>Shake nutritionnel à base d'ingrédients naturels. Riche en protéines et vitamines. Idéal pour l'énergie quotidienne et la gestion du poids.</p>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-      </div>
-
-      <div class="product-card">
-        <img src="ChatGPT Image 20_07_2025, 15_00_06.png" alt="Boisson Concentrée Aloé Vera">
-        <h2>Boisson Concentrée Aloé Vera</h2>
-        <p>Une boisson rafraîchissante à base d’Aloe Vera pur, idéale pour l’hydratation et la digestion. Elle aide à purifier l’organisme et favorise un bon équilibre intestinal.</p>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-      </div>
+      <p>Cliquez simplement sur le bouton WhatsApp ci-dessus pour discuter avec nous, poser vos questions ou passer commande. Nous vous répondons rapidement et vous accompagnons dans le choix du meilleur produit selon vos besoins.</p>
     </div>
   </section>
 
