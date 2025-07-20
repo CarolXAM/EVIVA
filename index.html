@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Éviva - Produits Naturels</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      background-color: #f8f8f8;
       color: #333;
     }
     header {
-      background-color: #84c684;
+      background-color: #74b974;
       color: white;
       padding: 2rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
       padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
     .products {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 2rem;
+      justify-content: center;
     }
     .product {
       background-color: white;
@@ -35,16 +53,15 @@
       text-align: center;
     }
     .product img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      margin-bottom: 1rem;
     }
     .whatsapp {
       display: inline-block;
-      margin-top: 2rem;
+      margin-top: 1rem;
       background-color: #25D366;
       color: white;
-      padding: 1rem 2rem;
+      padding: 0.8rem 1.5rem;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
@@ -53,22 +70,62 @@
 </head>
 <body>
   <header>
-    <h1>Éviva</h1>
-    <p>Produits naturels pour votre bien-être quotidien</p>
+    <h1><i class="fas fa-leaf"></i> Éviva</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#apropos"><i class="fas fa-users"></i> Qui sommes-nous ?</a></li>
+        <li><a href="#produits"><i class="fas fa-shopping-basket"></i> Nos Produits</a></li>
+        <li><a href="#commander"><i class="fas fa-box"></i> Comment commander</a></li>
+        <li><a href="#plan"><i class="fas fa-heart"></i> Plan Bien-être</a></li>
+        <li><a href="#contact"><i class="fas fa-comments"></i> Contact / Aide</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <section id="accueil">
+    <h2>Bienvenue chez Éviva</h2>
+    <p>Découvrez le pouvoir des produits naturels pour améliorer votre santé, votre énergie et votre bien-être au quotidien.</p>
+  </section>
+
+  <section id="apropos">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+      Éviva est une initiative familiale dédiée au bien-être naturel. Nous proposons des produits naturels sélectionnés pour leur efficacité, ainsi qu’un accompagnement personnalisé et des conseils adaptés à chaque besoin. Nous croyons en une approche holistique, humaine et accessible à tous.
+    </p>
+  </section>
+
   <section id="produits">
-    <h2>Notre Produit</h2>
+    <h2>Nos Produits</h2>
     <div class="products">
       <div class="product">
-        <img src="A_digital_photograph_features_a_Herbalife_Nutritio.png" alt="Shake Vanille Naturel" />
+        <img src="https://raw.githubusercontent.com/CarolXAM/EVIVA/main/ChatGPT%20Image%2020_07_2025,%2012_18_35.png" alt="Shake Vanille Naturel">
         <h3>Shake Vanille Naturel</h3>
-        <p>Shake nutritionnel à base d'ingrédients naturels. Riche en protéines et vitamines.</p>
+        <p>Shake nutritionnel à base d’ingrédients naturels. Riche en protéines et vitamines. Idéal pour l’énergie et la gestion du poids.</p>
+        <a class="whatsapp" href="https://wa.me/41778115240" target="_blank"><i class="fab fa-whatsapp"></i> Commander via WhatsApp</a>
       </div>
     </div>
-    <div style="text-align:center;">
-      <a class="whatsapp" href="https://wa.me/41778115240" target="_blank">📲 Commander via WhatsApp</a>
-    </div>
+  </section>
+
+  <section id="commander">
+    <h2>Comment commander</h2>
+    <p>
+      Pour passer commande, il vous suffit de nous contacter par WhatsApp. Nous vous guiderons dans le choix de vos produits, répondrons à vos questions et validerons ensemble votre commande. Le paiement peut se faire par TWINT ou virement bancaire.
+    </p>
+  </section>
+
+  <section id="plan">
+    <h2>Plan Bien-être</h2>
+    <p>
+      Nous élaborons un plan personnalisé en fonction de vos objectifs : perte de poids, digestion, énergie, nutrition sportive, etc. Le suivi est offert et vous bénéficiez de conseils réguliers adaptés à votre évolution.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact / Aide</h2>
+    <p><i class="fab fa-whatsapp"></i> WhatsApp : <a href="https://wa.me/41778115240">+41 77 811 52 40</a></p>
+    <p><i class="fas fa-envelope"></i> Email : <a href="mailto:davidcosta46@hotmail.com">davidcosta46@hotmail.com</a></p>
+    <p>Nous sommes disponibles pour toute question ou besoin d’accompagnement.</p>
   </section>
 </body>
 </html>
