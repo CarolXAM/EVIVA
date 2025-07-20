@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Éviva - Bien-être naturel</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éviva - Bien-être et énergie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #84c684;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+    nav {
+      background-color: #6baa6b;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .product {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
     <h1>Éviva</h1>
-    <p>Bienvenue sur notre page de produits naturels.</p>
-    <a href="https://wa.me/41778115240" target="_blank">📦 Commander par WhatsApp</a>
-  </body>
+    <p>Votre source de bien-être et d'énergie naturelle</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#apropos">À propos</a>
+    <a href="#commander">Commander</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="accueil">
+    <h2>Bienvenue chez Éviva</h2>
+    <p>Nous vous proposons une sélection de produits naturels pour votre santé et votre vitalité.</p>
+  </section>
+
+  <section id="produits">
+    <h2>Nos Produits</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Thé Detox</h3>
+        <p>Favorise la digestion et l’élimination des toxines.</p>
+      </div>
+      <div class="product">
+        <h3>Complément Vitamine C</h3>
+        <p>Renforce le système immunitaire.</p>
+      </div>
+      <div class="product">
+        <h3>Crème Hydratante Bio</h3>
+        <p>Hydratation intense pour tous les types de peau.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Je suis distributrice indépendante de produits naturels sélectionnés avec soin pour votre bien-être.</p>
+  </section>
+
+  <section id="commander">
+    <h2>Comment Commander</h2>
+    <p>Envoyez-moi simplement un message via WhatsApp avec les produits qui vous intéressent.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <a class="whatsapp" href="https://wa.me/41778115240" target="_blank">📲 Commander par WhatsApp</a>
+  </section>
+</body>
 </html>
