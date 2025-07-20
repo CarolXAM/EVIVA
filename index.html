@@ -2,129 +2,149 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Éviva - Santé Beauté Bien-être</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fceff4;
-      color: #4b2e2e;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem 1rem 1rem;
-    }
-    header img {
-      max-width: 180px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0 0.3rem 0;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #4b2e2e;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .product {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #ffffff;
-      max-width: 340px;
-      margin: 2rem auto;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      color: #333;
     }
-    .product img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+
+    nav {
+      background-color: #6b2d5c;
+      padding: 10px 20px;
+      text-align: center;
     }
-    .product h3 {
-      margin: 0.5rem 0;
-      color: #4b2e2e;
-    }
-    .product p {
-      font-size: 1rem;
-      color: #555;
-    }
-    .whatsapp {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background-color: #c6a664;
+
+    nav a {
       color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 5px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
-      transition: background 0.3s;
     }
-    .whatsapp:hover {
-      background-color: #b29050;
+
+    header {
+      background-color: #fcece6;
+      padding: 40px 20px;
+      text-align: center;
     }
+
+    header h1 {
+      font-size: 3em;
+      color: #6b2d5c;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.3em;
+      color: #5c5c5c;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: inline-block;
+      padding: 20px;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+
+    .product-card img {
+      width: 180px;
+      height: auto;
+    }
+
+    .product-card h2 {
+      margin-top: 10px;
+      color: #6b2d5c;
+    }
+
+    .product-card p {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
     .about, .contact {
-      background-color: #fff4f7;
-      padding: 2rem 1rem;
-    }
-    .about h2, .contact h2 {
-      color: #4b2e2e;
-    }
-    .about p, .contact p {
       max-width: 800px;
-      margin: auto;
-      font-size: 1.05rem;
-      color: #555;
-      line-height: 1.6;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .about h2, .contact h2 {
+      color: #6b2d5c;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.jpg" alt="Santé Beauté Bien-être">
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#apropos">À propos</a>
+    <a href="#commander">Commander</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="accueil">
     <h1>Éviva</h1>
-    <p>Révélez votre beauté naturelle avec des produits sains et artisanaux.</p>
+    <p>Chez Éviva, nous croyons que le bien-être commence par la nature. Nos produits artisanaux suisses sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure. Qualité, éthique et vitalité sont au cœur de notre mission.</p>
   </header>
 
-  <section class="product">
-    <img src="A_digital_photograph_features_a_Herbalife_Nutritio.png" alt="Shake Vanille Naturel">
-    <h3>Shake Vanille Naturel</h3>
-    <p>Shake nutritionnel à base d'ingrédients naturels. Riche en protéines et vitamines. Idéal pour l'énergie quotidienne.</p>
-    <a class="whatsapp" href="https://wa.me/41778115240" target="_blank">📲 Commander via WhatsApp</a>
+  <section id="produits">
+    <h2>Nos Produits</h2>
+    <div class="product-card">
+      <img src="ChatGPT%20Image%2020_07_2025,%2012_18_35.png" alt="Shake Vanille Naturel">
+      <h2>Shake Vanille Naturel</h2>
+      <p>Shake nutritionnel à base d'ingrédients naturels. Riche en protéines et vitamines. Idéal pour l'énergie quotidienne et la gestion du poids.</p>
+      <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
+    </div>
   </section>
 
-  <section class="about">
-    <h2>Qui sommes-nous ?</h2>
-    <p>
-      Éviva est une entreprise familiale située en Suisse, dédiée à votre bien-être. Nous croyons que la nature offre les meilleures solutions pour prendre soin de soi. C’est pourquoi nous sélectionnons avec soin des produits naturels, artisanaux et respectueux du corps.
-      <br><br>
-      Notre mission est de vous accompagner dans une démarche de santé et de beauté naturelles, grâce à un suivi personnalisé et des conseils adaptés à vos besoins. Nous proposons un large choix de produits : compléments alimentaires, soins pour la peau, boissons énergétiques naturelles, et bien plus encore.
-      <br><br>
-      Tous nos produits sont testés, approuvés, et choisis selon des critères de qualité stricts. Nous mettons un point d'honneur à vous offrir un service humain, à l’écoute, et adapté à chaque étape de votre parcours bien-être.
-    </p>
+  <section id="apropos">
+    <div class="about">
+      <h2>Qui sommes-nous ?</h2>
+      <p>Éviva est une initiative passionnée née en Suisse, dédiée à la promotion d’un mode de vie sain et équilibré. Nous collaborons avec des producteurs locaux pour vous proposer des produits naturels, éthiques et efficaces.</p>
+    </div>
   </section>
 
-  <section class="about">
-    <h2>Planification & Suivi</h2>
-    <p>
-      Chez Éviva, chaque client bénéficie d’un accompagnement sur mesure. Que vous souhaitiez perdre du poids, renforcer votre énergie, améliorer votre peau ou simplement vous sentir mieux au quotidien, nous élaborons un plan adapté à vos objectifs.
-      <br><br>
-      Vous recevrez un suivi régulier, des conseils pratiques, et un contact direct via WhatsApp pour poser vos questions, ajuster vos produits et partager vos progrès.
-    </p>
+  <section id="commander">
+    <div class="about">
+      <h2>Comment commander ?</h2>
+      <p>Cliquez simplement sur le bouton WhatsApp ci-dessus pour discuter avec nous, poser vos questions ou passer commande. Nous vous répondons rapidement et vous accompagnons dans le choix du meilleur produit selon vos besoins.</p>
+    </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact & Commandes</h2>
-    <p>
-      Vous pouvez commander nos produits ou poser vos questions directement via WhatsApp. Nous livrons dans toute la Suisse. Paiement sécurisé et livraison rapide.
-      <br><br>
-      📲 <a class="whatsapp" href="https://wa.me/41778115240" target="_blank">Cliquez ici pour nous écrire sur WhatsApp</a>
-    </p>
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email : cxime.ag@gmail.com<br>
+      Téléphone : +41 77 811 52 40<br>
+      Instagram : à venir</p>
+    </div>
   </section>
 </body>
 </html>
