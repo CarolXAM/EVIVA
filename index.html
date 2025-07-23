@@ -50,6 +50,12 @@
       text-align: center;
     }
 
+    .category-title {
+      font-size: 1.8em;
+      color: #6b2d5c;
+      margin-bottom: 20px;
+    }
+
     .product-grid {
       display: flex;
       flex-wrap: wrap;
@@ -64,6 +70,7 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
       padding: 20px;
       width: 300px;
+      text-align: center;
     }
 
     .product-card img {
@@ -79,7 +86,13 @@
     .product-card p {
       font-size: 1em;
       color: #444;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #6b2d5c;
+      margin-bottom: 15px;
     }
 
     .whatsapp-button {
@@ -93,16 +106,6 @@
       text-decoration: none;
       display: inline-block;
     }
-
-    .about, .contact {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    .about h2, .contact h2, .product-category h3 {
-      color: #6b2d5c;
-    }
   </style>
 </head>
 <body>
@@ -110,85 +113,88 @@
     <a href="#accueil">Accueil</a>
     <a href="#apropos">À propos</a>
     <a href="#produits">Produits</a>
-    <a href="#commander">Commander</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header id="accueil">
     <h1>Éviva Nature</h1>
-    <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature. Nos produits sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure. Qualité, éthique et vitalité sont au cœur de notre mission.</p>
+    <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature. Nos produits naturels sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure. Qualité, éthique et vitalité sont au cœur de notre mission.</p>
   </header>
 
   <section id="apropos">
-    <div class="about">
-      <h2>Qui sommes-nous ?</h2>
-      <p>Éviva Nature est née en 2023, dans le paisible village de Champlan, au cœur du Valais. Ce n’était pas une entreprise. C’était un espoir. Celui de prendre soin des autres, comme on prend soin de sa propre famille.</p>
-      <p>Avec le temps, nous avons grandi, mais notre cœur reste ancré ici. Depuis Champlan, nous rayonnons à travers toute la Suisse, avec une seule certitude : chaque personne compte. Chaque histoire mérite d’être écoutée. Chaque besoin appelle une réponse douce, honnête et naturelle.</p>
-      <p>Chez Éviva Nature, il n’y a pas de promesses magiques. Il y a du respect, de la chaleur humaine, et une vraie volonté d’aider. Nous vous accompagnons, vous guidons et vous conseillons, avec patience, bienveillance et amour.</p>
-      <p>Aujourd’hui, nous avons la joie de marcher aux côtés de personnes en Suisse, en France, en Espagne, au Portugal et jusqu’en Bolivie. Où que vous soyez, notre message est simple : vous méritez de vous sentir bien. Vous méritez Éviva Nature.</p>
-    </div>
+    <h2>Qui sommes-nous ?</h2>
+    <p>Éviva Nature est née en 2023, dans le paisible village de Champlan, au cœur du Valais. Ce n’était pas une entreprise. C’était un espoir. Celui de prendre soin des autres, comme on prend soin de sa propre famille.</p>
+    <p>Depuis Champlan, nous rayonnons à travers la Suisse, la France, l’Espagne, le Portugal et la Bolivie. Chez Éviva Nature, chaque personne compte. Chaque besoin mérite une réponse naturelle, honnête et bienveillante.</p>
   </section>
 
   <section id="produits">
     <h2>Nos Produits</h2>
 
-    <div class="product-category">
-      <h3>Beauté & Soins</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="vital_c_serum_50ml.png" alt="Sérum VITAL C - 50ml">
-          <h2>Sérum VITAL C - 50ml</h2>
-          <p>Un sérum hydratant puissant enrichi en vitamine C pour revitaliser et illuminer la peau.</p>
-          <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-        </div>
-        <div class="product-card">
-          <img src="gh_uv_protect_spf50.png" alt="Filtre UV Protect SPF 50+ g&h">
-          <h2>Filtre UV Protect SPF 50+ g&h</h2>
-          <p>Protection solaire légère pour toute la famille contre les rayons nocifs et les agressions environnementales.</p>
-          <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-        </div>
+    <div class="category-title">Nutrition</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="shake_vanille.png" alt="Shake Vanille Naturel">
+        <h2>Shake Vanille Naturel</h2>
+        <p>Shake nutritionnel riche en protéines et vitamines. Idéal pour l'énergie et la gestion du poids.</p>
+        <div class="price">CHF 59.90</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
+      </div>
+      <div class="product-card">
+        <img src="f1_vanille.png" alt="F1 Vanille">
+        <h2>F1 Vanille</h2>
+        <p>Substitut de repas équilibré avec protéines, fibres et vitamines. Goût vanille.</p>
+        <div class="price">CHF 56.75</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
     </div>
 
-    <div class="product-category">
-      <h3>Santé & Nutrition</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="shake_vanille.png" alt="Shake Vanille Naturel">
-          <h2>Shake Vanille Naturel</h2>
-          <p>Shake nutritionnel à base d'ingrédients naturels. Riche en protéines et vitamines.</p>
-          <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-        </div>
-        <div class="product-card">
-          <img src="aloe_vera.png" alt="Boisson Concentrée Aloé Vera">
-          <h2>Boisson Concentrée Aloé Vera</h2>
-          <p>Boisson à base d’Aloe Vera pur, idéale pour la digestion et l’hydratation naturelle.</p>
-          <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-        </div>
-        <div class="product-card">
-          <img src="f1_vanille.png" alt="F1 Équilibre Nutritionnel – Vanille">
-          <h2>F1 Équilibre Nutritionnel – Vanille</h2>
-          <p>Shake complet riche en protéines et fibres. Remplace un repas sainement.</p>
-          <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander via WhatsApp</a>
-        </div>
+    <div class="category-title">Bien-être Digestif</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="aloe_vera.png" alt="Boisson Aloe Vera">
+        <h2>Boisson Aloe Vera</h2>
+        <p>Hydratante et rafraîchissante, aide à la digestion et équilibre intestinal.</p>
+        <div class="price">CHF 42.30</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
     </div>
-  </section>
 
-  <section id="commander">
-    <div class="about">
-      <h2>Comment commander ?</h2>
-      <p>Cliquez sur le bouton WhatsApp pour discuter avec nous, poser vos questions ou passer commande. Nous vous conseillons avec plaisir.</p>
+    <div class="category-title">Soin du Visage</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="vital_c_serum_50ml.png" alt="VITAL C Sérum">
+        <h2>Sérum VITAL C 50ml</h2>
+        <p>Sérum hydratant à la vitamine C. Illumine et revitalise la peau.</p>
+        <div class="price">CHF 83.45</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
+      </div>
+      <div class="product-card">
+        <img src="gh_uv_protect_spf50.png" alt="Protection UV">
+        <h2>Filtre UV Protect SPF 50+</h2>
+        <p>Protection légère et rapide contre les rayons UVB/UVA pour toute la famille.</p>
+        <div class="price">CHF 87.55</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
+      </div>
+      <div class="product-card">
+        <img src="artistry_labs_dermasonic.png" alt="Dermasonic">
+        <h2>Artistry Labs Dermasonic</h2>
+        <p>Dispositif facial intelligent pour améliorer l'absorption des soins.</p>
+        <div class="price">CHF 363.55</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
+      </div>
+      <div class="product-card">
+        <img src="artistry_labs_retexturizing.png" alt="Retexturizing Peel">
+        <h2>Artistry Labs Retexturizing Peel</h2>
+        <p>Exfoliation douce pour améliorer la texture et l'éclat de la peau.</p>
+        <div class="price">CHF 216.30</div>
+        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <div class="contact">
-      <h2>Contact</h2>
-      <p>Email : cxime.ag@gmail.com<br>
-      Téléphone : +41 77 811 52 40<br>
-      Instagram : @eviva_suisse</p>
-    </div>
+    <h2>Contact</h2>
+    <p>Email : cxime.ag@gmail.com<br>Téléphone : +41 77 811 52 40<br>Instagram : @eviva_nature</p>
   </section>
 </body>
 </html>
