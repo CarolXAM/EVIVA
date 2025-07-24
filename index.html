@@ -14,7 +14,7 @@
     }
 
     nav {
-      background-color: rgba(107, 45, 92, 0.95);
+      background-color: #6b2d5c;
       padding: 10px 20px;
       text-align: center;
     }
@@ -27,32 +27,31 @@
     }
 
     header {
-      padding: 60px 20px;
+      background-color: rgba(252, 236, 230, 0.85);
+      padding: 40px 20px;
       text-align: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.35);
     }
 
     header h1 {
       font-size: 3em;
+      color: #6b2d5c;
       margin-bottom: 10px;
-      text-shadow: 2px 2px 4px #00000055;
     }
 
     header p {
-      font-size: 1.3em;
       font-style: italic;
+      font-size: 1.3em;
+      color: #5c5c5c;
       max-width: 700px;
       margin: 0 auto;
-      text-shadow: 1px 1px 3px #00000044;
     }
 
     section {
       padding: 40px 20px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(255, 255, 255, 0.92);
       margin: 20px;
-      border-radius: 16px;
+      border-radius: 12px;
     }
 
     .category-title {
@@ -127,6 +126,10 @@
     }
 
     @media (max-width: 768px) {
+      #contact {
+        margin-top: 60px;
+      }
+
       .product-grid {
         flex-direction: column;
         align-items: center;
@@ -138,6 +141,10 @@
 
       header p {
         font-size: 1.1em;
+      }
+
+      .category-title {
+        font-size: 1.6em;
       }
     }
   </style>
