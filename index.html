@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('fundo-eviva.png') no-repeat center center fixed;
+      background: url('fond-eviva.png') no-repeat center center fixed;
       background-size: cover;
       color: #333;
     }
 
     nav {
-      background-color: rgba(107, 45, 92, 0.9);
+      background-color: #6b2d5c;
       padding: 10px 20px;
       text-align: center;
     }
@@ -27,7 +27,7 @@
     }
 
     header {
-      background-color: rgba(252, 236, 230, 0.95);
+      background-color: rgba(252, 236, 230, 0.85);
       padding: 40px 20px;
       text-align: center;
     }
@@ -47,50 +47,43 @@
     }
 
     section {
-      padding: 50px 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      margin: 30px auto;
-      max-width: 1200px;
-      border-radius: 20px;
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.92);
+      margin: 20px;
+      border-radius: 12px;
     }
 
     .category-title {
       font-size: 2em;
-      color: #5c2d5c;
-      margin-bottom: 30px;
+      color: #6b2d5c;
+      margin: 40px 0 20px;
       font-style: italic;
-      border-bottom: 2px dashed #6b2d5c;
-      padding-bottom: 10px;
-      display: inline-block;
+      text-shadow: 1px 1px #ddd;
     }
 
     .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
+      gap: 20px;
     }
 
     .product-card {
       background-color: #fff;
       border: 1px solid #eee;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       padding: 20px;
-      width: 280px;
+      width: 300px;
       text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: scale(1.03);
     }
 
     .product-card img {
       width: 180px;
       height: auto;
       transition: transform 0.3s ease;
+      cursor: pointer;
     }
 
     .product-card img:hover {
@@ -133,7 +126,7 @@
     }
   </style>
 </head>
-<body>
+<body
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#apropos">À propos</a>
