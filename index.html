@@ -8,7 +8,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #e6f4e6, #d0e6d0);
+      background: url('fundo-eviva.png') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
     }
 
@@ -48,9 +49,10 @@
     section {
       padding: 40px 20px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.95);
-      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px auto;
       border-radius: 12px;
+      max-width: 1200px;
     }
 
     .category-title {
@@ -74,12 +76,12 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
       padding: 20px;
-      width: 300px;
+      width: 280px;
       text-align: center;
     }
 
     .product-card img {
-      width: 180px;
+      width: 160px;
       height: auto;
       transition: transform 0.3s ease;
       cursor: pointer;
@@ -92,10 +94,11 @@
     .product-card h2 {
       margin-top: 10px;
       color: #6b2d5c;
+      font-size: 1.1em;
     }
 
     .product-card p {
-      font-size: 1em;
+      font-size: 0.95em;
       color: #444;
       margin-bottom: 10px;
     }
@@ -110,12 +113,11 @@
       background-color: #25D366;
       color: white;
       border: none;
-      padding: 12px 20px;
+      padding: 10px 16px;
       font-size: 1em;
       border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
-      display: inline-block;
     }
 
     .footer-note {
@@ -135,7 +137,9 @@
 
   <header id="accueil">
     <h1>Éviva Nature</h1>
-    <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature. Nos produits naturels sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure. Qualité, éthique et vitalité sont au cœur de notre mission.</p>
+    <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature.<br />
+    Nos produits naturels sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure.<br />
+    Qualité, éthique et vitalité sont au cœur de notre mission.</p>
   </header>
 
   <section id="apropos">
@@ -150,14 +154,15 @@
     <div class="category-title">Nutrition</div>
     <div class="product-grid">
       <div class="product-card">
-        <img src="shake_vanille.png" alt="Shake Vanille Naturel">
+        <img src="shake_vanille.png" alt="Shake Vanille">
         <h2>Shake Vanille Naturel</h2>
         <p>Shake nutritionnel riche en protéines et vitamines. Idéal pour l'énergie et la gestion du poids.</p>
         <div class="price">CHF 58.61</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
+
       <div class="product-card">
-        <img src="f1_vanille.png" alt="F1 Vanille">
+        <img src="f1_vanille.png" alt="F1 Vanille 780g">
         <h2>F1 Vanille 780g</h2>
         <p>Substitut de repas équilibré avec protéines, fibres et vitamines. Goût vanille.</p>
         <div class="price">CHF 73.10</div>
@@ -168,7 +173,7 @@
     <div class="category-title">Bien-être Digestif</div>
     <div class="product-grid">
       <div class="product-card">
-        <img src="aloe_vera.png" alt="Boisson Aloe Vera">
+        <img src="aloe_vera.png" alt="Aloe Vera">
         <h2>Boisson Aloe Vera</h2>
         <p>Hydratante et rafraîchissante, aide à la digestion et équilibre intestinal.</p>
         <div class="price">CHF 55.74</div>
@@ -179,19 +184,21 @@
     <div class="category-title">Soin du Visage</div>
     <div class="product-grid">
       <div class="product-card">
-        <img src="vital_c_serum_50ml.png" alt="VITAL C Sérum">
+        <img src="vital_c_serum_50ml.png" alt="VITAL C">
         <h2>Sérum VITAL C 50ml</h2>
         <p>Sérum hydratant à la vitamine C. Illumine et revitalise la peau.</p>
         <div class="price">CHF 99.00</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
+
       <div class="product-card">
-        <img src="gh_uv_protect_spf50.png" alt="Protection UV">
+        <img src="gh_uv_protect_spf50.png" alt="Filtre UV Protect">
         <h2>Filtre UV Protect SPF 50+</h2>
         <p>Protection légère et rapide contre les rayons UVB/UVA pour toute la famille.</p>
         <div class="price">CHF 25.80</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
+
       <div class="product-card">
         <img src="artistry_labs_dermasonic.png" alt="Dermasonic">
         <h2>Artistry Labs Dermasonic</h2>
@@ -199,6 +206,7 @@
         <div class="price">CHF 363.55</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
+
       <div class="product-card">
         <img src="artistry_labs_retexturizing.png" alt="Retexturizing Peel">
         <h2>Artistry Labs Retexturizing Peel</h2>
@@ -206,8 +214,9 @@
         <div class="price">CHF 216.30</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
+
       <div class="product-card">
-        <img src="sleeping_mask_accessoire.png" alt="Sleeping Mask Accessoire">
+        <img src="sleeping_mask_accessoire.png" alt="Masque de Nuit">
         <h2>Masque de Nuit - Accessoire</h2>
         <p>Accessoire confortable pour maximiser les effets de vos soins de nuit.</p>
         <div class="price">CHF 83.45</div>
