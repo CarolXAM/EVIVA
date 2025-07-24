@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,127 +10,126 @@
       background: url('fundo-eviva.png') no-repeat center center fixed;
       background-size: cover;
       color: #333;
-    }
+    }nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  text-align: center;
+}
 
-    nav {
-      background-color: #6b2d5c;
-      padding: 10px 20px;
-      text-align: center;
-    }
+nav a {
+  color: #6b2d5c;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+header {
+  padding: 60px 20px;
+  text-align: center;
+  color: #6b2d5c;
+}
 
-    header {
-      background-color: rgba(252, 236, 230, 0.85);
-      padding: 40px 20px;
-      text-align: center;
-      border-radius: 0 0 20px 20px;
-      margin-bottom: 20px;
-    }
+header h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
 
-    header h1 {
-      font-size: 3em;
-      color: #6b2d5c;
-      margin-bottom: 10px;
-    }
+header p {
+  font-size: 1.3em;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-    header p {
-      font-style: italic;
-      font-size: 1.3em;
-      color: #5c5c5c;
-      max-width: 700px;
-      margin: 0 auto;
-    }
+section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 20px;
+  border-radius: 16px;
+}
 
-    section {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.92);
-      margin: 20px;
-      border-radius: 12px;
-    }
+.category-title {
+  font-size: 2.2em;
+  color: #6b2d5c;
+  margin: 40px 0 20px;
+  font-style: italic;
+  text-shadow: 1px 1px #ddd;
+}
 
-    .category-title {
-      font-size: 2em;
-      color: #6b2d5c;
-      margin: 40px 0 20px;
-      font-style: italic;
-      text-shadow: 1px 1px #ddd;
-    }
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+.product-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
 
-    .product-card {
-      background-color: #fff;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 20px;
-      width: 300px;
-      text-align: center;
-    }
+.product-card img {
+  width: 180px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 
-    .product-card img {
-      width: 180px;
-      height: auto;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
+.product-card img:hover {
+  transform: scale(1.1);
+}
 
-    .product-card img:hover {
-      transform: scale(1.1);
-    }
+.product-card h2 {
+  margin-top: 10px;
+  color: #6b2d5c;
+}
 
-    .product-card h2 {
-      margin-top: 10px;
-      color: #6b2d5c;
-    }
+.product-card p {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 10px;
+}
 
-    .product-card p {
-      font-size: 1em;
-      color: #444;
-      margin-bottom: 10px;
-    }
+.price {
+  font-weight: bold;
+  color: #6b2d5c;
+  margin-bottom: 15px;
+}
 
-    .price {
-      font-weight: bold;
-      color: #6b2d5c;
-      margin-bottom: 15px;
-    }
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
 
-    .whatsapp-button {
-      background-color: #25D366;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-note {
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 40px;
-    }
+  header h1 {
+    font-size: 2.5em;
+  }
 
-    @media (max-width: 768px) {
-      #contact {
-        margin-top: 60px;
-      }
-    }
+  header p {
+    font-size: 1.1em;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -139,23 +137,10 @@
     <a href="#accueil">Accueil</a>
     <a href="#apropos">À propos</a>
     <a href="#produits">Produits</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header id="accueil">
+  </nav>  <header id="accueil">
     <h1>Éviva Nature</h1>
     <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature. Nos produits naturels sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure. Qualité, éthique et vitalité sont au cœur de notre mission.</p>
-  </header>
-
-  <section id="apropos">
-    <h2>Qui sommes-nous ?</h2>
-    <p>Éviva Nature est née en 2023, dans le paisible village de Champlan, au cœur du Valais. Ce n’était pas une entreprise. C’était un espoir. Celui de prendre soin des autres, comme on prend soin de sa propre famille.</p>
-    <p>Depuis Champlan, nous rayonnons à travers la Suisse, la France, l’Espagne, le Portugal et la Bolivie. Chez Éviva Nature, chaque personne compte. Chaque besoin mérite une réponse naturelle, honnête et bienveillante.</p>
-  </section>
-
-  <section id="produits">
-    <h2>Nos Produits</h2>
-
+  </header>  <section id="produits">
     <div class="category-title">Nutrition</div>
     <div class="product-grid">
       <div class="product-card">
@@ -167,68 +152,12 @@
       </div>
       <div class="product-card">
         <img src="f1_vanille.png" alt="F1 Vanille">
-        <h2>F1 Vanille 780g</h2>
+        <h2>F1 Vanille</h2>
         <p>Substitut de repas équilibré avec protéines, fibres et vitamines. Goût vanille.</p>
         <div class="price">CHF 73.10</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
     </div>
-
-    <div class="category-title">Bien-être Digestif</div>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="aloe_vera.png" alt="Boisson Aloe Vera">
-        <h2>Boisson Aloe Vera</h2>
-        <p>Hydratante et rafraîchissante, aide à la digestion et équilibre intestinal.</p>
-        <div class="price">CHF 55.74</div>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
-      </div>
-    </div>
-
-    <div class="category-title">Soin du Visage</div>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="vital_c_serum_50ml.png" alt="VITAL C Sérum">
-        <h2>Sérum VITAL C 50ml</h2>
-        <p>Sérum hydratant à la vitamine C. Illumine et revitalise la peau.</p>
-        <div class="price">CHF 99.00</div>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
-      </div>
-      <div class="product-card">
-        <img src="gh_uv_protect_spf50.png" alt="Protection UV">
-        <h2>Filtre UV Protect SPF 50+</h2>
-        <p>Protection légère et rapide contre les rayons UVB/UVA pour toute la famille.</p>
-        <div class="price">CHF 25.80</div>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
-      </div>
-      <div class="product-card">
-        <img src="artistry_labs_dermasonic.png" alt="Dermasonic">
-        <h2>Artistry Labs Dermasonic</h2>
-        <p>Dispositif facial intelligent pour améliorer l'absorption des soins.</p>
-        <div class="price">CHF 363.55</div>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
-      </div>
-      <div class="product-card">
-        <img src="artistry_labs_retexturizing.png" alt="Retexturizing Peel">
-        <h2>Artistry Labs Retexturizing Peel</h2>
-        <p>Exfoliation douce pour améliorer la texture et l'éclat de la peau.</p>
-        <div class="price">CHF 216.30</div>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
-      </div>
-      <div class="product-card">
-        <img src="sleeping_mask_accessoire.png" alt="Sleeping Mask Accessoire">
-        <h2>Masque de Nuit - Accessoire</h2>
-        <p>Accessoire confortable pour maximiser les effets de vos soins de nuit.</p>
-        <div class="price">CHF 83.45</div>
-        <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : cxime.ag@gmail.com<br>Téléphone : +41 77 811 52 40<br>Instagram : @eviva_nature</p>
-    <p class="footer-note">Frais de livraison : CHF 7.- en Suisse / CHF 12.- à l’étranger. Livraison gratuite dès CHF 150.- d’achat.</p>
   </section>
 </body>
 </html>
