@@ -15,7 +15,7 @@
 
     nav {
       background-color: #6b2d5c;
-      padding: 10px 20px;
+      padding: 10px;
       text-align: center;
     }
 
@@ -27,7 +27,7 @@
     }
 
     header {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 40px 20px;
       text-align: center;
     }
@@ -47,20 +47,18 @@
     }
 
     section {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 20px;
       padding: 40px 20px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.9);
-      margin: 20px auto;
       border-radius: 12px;
-      max-width: 1200px;
     }
 
-    .category-title {
+    h2 {
       font-size: 2em;
       color: #6b2d5c;
-      margin: 40px 0 20px;
+      text-align: center;
       font-style: italic;
-      text-shadow: 1px 1px #ddd;
+      margin-bottom: 30px;
     }
 
     .product-grid {
@@ -71,42 +69,40 @@
     }
 
     .product-card {
-      background-color: #fff;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
       padding: 20px;
       width: 280px;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .product-card img {
       width: 160px;
       height: auto;
+      border-radius: 6px;
       transition: transform 0.3s ease;
-      cursor: pointer;
     }
 
     .product-card img:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
-    .product-card h2 {
-      margin-top: 10px;
+    .product-card h3 {
       color: #6b2d5c;
-      font-size: 1.1em;
+      margin: 10px 0;
     }
 
     .product-card p {
       font-size: 0.95em;
       color: #444;
-      margin-bottom: 10px;
     }
 
     .price {
       font-weight: bold;
       color: #6b2d5c;
-      margin-bottom: 15px;
+      margin: 10px 0;
     }
 
     .whatsapp-button {
@@ -115,15 +111,16 @@
       border: none;
       padding: 10px 16px;
       font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
+      border-radius: 6px;
       text-decoration: none;
+      display: inline-block;
     }
 
-    .footer-note {
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9em;
-      color: #555;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -137,9 +134,7 @@
 
   <header id="accueil">
     <h1>Éviva Nature</h1>
-    <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature.<br />
-    Nos produits naturels sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure.<br />
-    Qualité, éthique et vitalité sont au cœur de notre mission.</p>
+    <p>Chez Éviva Nature, nous croyons que le bien-être commence par la nature. Nos produits naturels sont soigneusement sélectionnés pour révéler votre beauté intérieure et extérieure.</p>
   </header>
 
   <section id="apropos">
@@ -150,85 +145,79 @@
 
   <section id="produits">
     <h2>Nos Produits</h2>
-
-    <div class="category-title">Nutrition</div>
     <div class="product-grid">
       <div class="product-card">
         <img src="shake_vanille.png" alt="Shake Vanille">
-        <h2>Shake Vanille Naturel</h2>
-        <p>Shake nutritionnel riche en protéines et vitamines. Idéal pour l'énergie et la gestion du poids.</p>
+        <h3>Shake Vanille Naturel</h3>
+        <p>Shake nutritionnel riche en protéines et vitamines.</p>
         <div class="price">CHF 58.61</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
 
       <div class="product-card">
-        <img src="f1_vanille.png" alt="F1 Vanille 780g">
-        <h2>F1 Vanille 780g</h2>
-        <p>Substitut de repas équilibré avec protéines, fibres et vitamines. Goût vanille.</p>
+        <img src="f1_vanille.png" alt="F1 Vanille">
+        <h3>F1 Vanille 780g</h3>
+        <p>Substitut de repas équilibré avec goût vanille.</p>
         <div class="price">CHF 73.10</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
-    </div>
 
-    <div class="category-title">Bien-être Digestif</div>
-    <div class="product-grid">
       <div class="product-card">
         <img src="aloe_vera.png" alt="Aloe Vera">
-        <h2>Boisson Aloe Vera</h2>
-        <p>Hydratante et rafraîchissante, aide à la digestion et équilibre intestinal.</p>
+        <h3>Boisson Aloe Vera</h3>
+        <p>Aide à la digestion et à l'équilibre intestinal.</p>
         <div class="price">CHF 55.74</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
-    </div>
 
-    <div class="category-title">Soin du Visage</div>
-    <div class="product-grid">
       <div class="product-card">
-        <img src="vital_c_serum_50ml.png" alt="VITAL C">
-        <h2>Sérum VITAL C 50ml</h2>
-        <p>Sérum hydratant à la vitamine C. Illumine et revitalise la peau.</p>
+        <img src="vital_c_serum_50ml.png" alt="Vital C">
+        <h3>Sérum VITAL C 50ml</h3>
+        <p>Hydratant à la vitamine C pour revitaliser la peau.</p>
         <div class="price">CHF 99.00</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
 
       <div class="product-card">
-        <img src="gh_uv_protect_spf50.png" alt="Filtre UV Protect">
-        <h2>Filtre UV Protect SPF 50+</h2>
-        <p>Protection légère et rapide contre les rayons UVB/UVA pour toute la famille.</p>
+        <img src="gh_uv_protect_spf50.png" alt="UV Protect">
+        <h3>Filtre UV Protect SPF 50+</h3>
+        <p>Protection légère contre les rayons UV.</p>
         <div class="price">CHF 25.80</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
 
       <div class="product-card">
         <img src="artistry_labs_dermasonic.png" alt="Dermasonic">
-        <h2>Artistry Labs Dermasonic</h2>
-        <p>Dispositif facial intelligent pour améliorer l'absorption des soins.</p>
+        <h3>Artistry Labs Dermasonic</h3>
+        <p>Améliore l'absorption des soins du visage.</p>
         <div class="price">CHF 363.55</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
 
       <div class="product-card">
-        <img src="artistry_labs_retexturizing.png" alt="Retexturizing Peel">
-        <h2>Artistry Labs Retexturizing Peel</h2>
-        <p>Exfoliation douce pour améliorer la texture et l'éclat de la peau.</p>
+        <img src="artistry_labs_retexturizing.png" alt="Peel">
+        <h3>Artistry Labs Retexturizing</h3>
+        <p>Exfoliation douce et éclat de la peau.</p>
         <div class="price">CHF 216.30</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
 
       <div class="product-card">
         <img src="sleeping_mask_accessoire.png" alt="Masque de Nuit">
-        <h2>Masque de Nuit - Accessoire</h2>
-        <p>Accessoire confortable pour maximiser les effets de vos soins de nuit.</p>
+        <h3>Masque de Nuit</h3>
+        <p>Accessoire confortable pour soins de nuit.</p>
         <div class="price">CHF 83.45</div>
         <a class="whatsapp-button" href="https://wa.me/41778115240" target="_blank">Commander</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : cxime.ag@gmail.com<br>Téléphone : +41 77 811 52 40<br>Instagram : @eviva_nature</p>
-    <p class="footer-note">Frais de livraison : CHF 7.- en Suisse / CHF 12.- à l’étranger. Livraison gratuite dès CHF 150.- d’achat.</p>
-  </section>
+  <footer id="contact">
+    <p>Email : cxime.ag@gmail.com<br>
+       Téléphone : +41 77 811 52 40<br>
+       Instagram : @eviva_nature</p>
+    <p>Frais de livraison : CHF 7.- en Suisse / CHF 12.- à l’étranger.<br>
+       Livraison gratuite dès CHF 150.- d’achat.</p>
+  </footer>
 </body>
 </html>
