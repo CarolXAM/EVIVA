@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
+      background: url('fundo-eviva.png') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
-      line-height: 1.6;
     }
 
     nav {
-      background-color: #6b2d5c;
+      background-color: rgba(107, 45, 92, 0.9);
       padding: 10px 20px;
       text-align: center;
     }
@@ -27,7 +27,7 @@
     }
 
     header {
-      background-color: #fcece6;
+      background-color: rgba(252, 236, 230, 0.95);
       padding: 40px 20px;
       text-align: center;
     }
@@ -48,15 +48,20 @@
 
     section {
       padding: 50px 20px;
-      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 30px auto;
+      max-width: 1200px;
+      border-radius: 20px;
     }
 
     .category-title {
       font-size: 2em;
-      font-family: 'Georgia', serif;
+      color: #5c2d5c;
+      margin-bottom: 30px;
       font-style: italic;
-      color: #8b3d74;
-      margin: 40px 0 30px;
+      border-bottom: 2px dashed #6b2d5c;
+      padding-bottom: 10px;
+      display: inline-block;
     }
 
     .product-grid {
@@ -64,17 +69,18 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
+      margin-top: 30px;
     }
 
     .product-card {
       background-color: #fff;
       border: 1px solid #eee;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 25px;
-      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      padding: 20px;
+      width: 280px;
       text-align: center;
-      transition: transform 0.2s;
+      transition: transform 0.3s ease;
     }
 
     .product-card:hover {
@@ -92,15 +98,14 @@
     }
 
     .product-card h2 {
-      margin-top: 15px;
+      margin-top: 10px;
       color: #6b2d5c;
-      font-size: 1.2em;
     }
 
     .product-card p {
       font-size: 1em;
       color: #444;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .price {
